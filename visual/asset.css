@@ -38,7 +38,7 @@ body {
 .box-2 p1 {
     text-shadow: 2px 2px 4px rgb(255, 255, 255, 0.5);
 }
-/* Setting text in box-2 p1 shadow */
+/* Setting text in box-2 p1 shadow with half transparency */
 
 .navbar {
     display: flex;
