@@ -85,3 +85,35 @@ body {
     text-align: center;
 }
 /* Search box styling with icon */
+
+.search-box input[type="text"] {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* Search box input styling */
+
+.search-box input[type="text"]:focus {
+    border-color: black;
+    outline: none;
+}
+/* Search box input focus styling when entering text */
+
+.intro-box {
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid lightgrey;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+/* Box intro styling */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    font-family: 'times new roman', serif;
+}
