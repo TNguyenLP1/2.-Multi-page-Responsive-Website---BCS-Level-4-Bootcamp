@@ -165,7 +165,7 @@ footer {
 .price-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-color: darkgrey;
     color: white;
@@ -208,5 +208,6 @@ th {
     text-align: center;
     background-color: whitesmoke;
     color: black;
+    border-radius: 5px;
 }
 /* Table box styling */
