@@ -41,27 +41,42 @@
         <!-- Header section -->
         
         <nav class="navbar">
-        <a href="index.htm">Home</a>
-        <a href="services.htm">Services</a>
-        <a href="about.htm">About</a>
-        <a href="affiliation.htm">Affiliation</a>
-        <a href="contact.htm">Contact</a>
-        <form class="search-box">
-            <label> Search: </label>
-            <input type="text" title="Search">
-        </form>
+            <a href="index.htm">Home</a>
+            <a href="services.htm">Services</a>
+            <a href="about.htm">About</a>
+            <a href="affiliation.htm">Affiliation</a>
+            <a href="contact.htm">Contact</a>  
+        
+            <!-- Navigation box -->
+
+            <form class="search-box">
+                <label> Search: </label>
+                <input type="text" title="Search">
+            </form>
+            <!-- Search bar form -->
+
+            <a onclick="myFunction()"> ☼/☾ </a>
+
+                <script>
+                    function myFunction() {
+                    var element = document.body;
+                element.classList.toggle("dark-mode");
+                    }
+                </script>
+                <!-- Dark mode toggle script -->
+
         </nav>
         <!-- Navigation bar section including search bar -->
 
         <section class="intro-box" id="box-intro">
 
-            <h2> Welcome to my Professional Services Site </h2>
+            <h2> Welcome Dear Patron </h2>
 
                 <p> 
-                    Tri Nguyen Professional Services is a consultancy advisor that provides professional amenities and facilities 
+                    Tri Nguyen Consultancy is a Professional Services Provider that provides expertise, support, and guidance 
                     in the fields of Environmental, Health & Safety, Quality, Project Management and Data Analysis. With years of 
-                    experience in various industries including Manufacturing, Biochemistry/Research, Data Science, and Environmental
-                    & Safety, I am well-equipped to offer expert advice and solutions to businesses of all sizes.
+                    experience in various industries including, but not limited to Manufacturing, Biochemistry/Research, Data Science, 
+                    and Environmental & Safety, I am well-equipped to offer expert advice and solutions to businesses of all sizes.
                 </p>
 
                 <p> 
@@ -70,11 +85,20 @@
                     Whether you are looking to improve workplace safety, enhance quality control, or streamline your operations, I am here 
                     to help.
                 </p>
+        </section>
+
+        <section class="farewell-box">
+                <p> 
+                    Thank you for considering Tri Nguyen Consultancy for your business needs. I look forward to the opportunity 
+                    to work alongside you and help your business achieve its true potential.
+                </p>
+        </section>
+
         </section> 
         <!-- Set Intro Section - Welcome Block -->
 
         <footer>
-            <h3> Copyright &copy; 2025 Tri Nguyen Professional Services </h3>
+            <h3> Copyright &copy; 2025 Tri Nguyen Consultancy </h3>
         </footer>
         <!-- Set Footer section -->
     </body>
