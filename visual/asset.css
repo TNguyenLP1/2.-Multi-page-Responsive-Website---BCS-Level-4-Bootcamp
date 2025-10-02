@@ -162,6 +162,7 @@ footer {
 }
 /* Service box styling */
 
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Services Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 .price-box {
     display: flex;
     flex-wrap: wrap;
@@ -211,3 +212,29 @@ th {
     border-radius: 5px;
 }
 /* Table box styling */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Services Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX About Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.container-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: darkgrey;
+    border: 2px solid black;
+    border-radius: 5px;
+    max-width: 625px;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: bottom;
+    flex-wrap: wrap;
+    align-self: bottom;
+
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX About Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
