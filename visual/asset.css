@@ -1,3 +1,95 @@
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX CSS Reset Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* CSS Reset */
+
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font size and line height */
+html {
+    font-size: 100%;
+    /* Default font size of 16px */
+    line-height: 1.5;
+}
+
+/* Remove default border and background */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+figure,
+ol,
+ul,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default quotes */
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+    content: none;
+}
+
+/* Remove default table spacing and borders */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Remove default button, input, textarea styling */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Remove link underline */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove image border */
+img {
+    border: 0;
+    max-width: 100%;
+    display: block;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX CSS Reset Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX General Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
 header {
     background-color: black;
     padding: 15px;
@@ -97,7 +189,8 @@ body {
 .search-box input[type="text"] {
     font-size: 16px;
     border: 2px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
+    background-color: white;
 }
 /* Search box input styling */
 
@@ -161,6 +254,7 @@ footer {
     color:black
 }
 /* Service box styling */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX General Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Services Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 .price-box {
@@ -170,12 +264,6 @@ footer {
     align-items: center;
     background-color: darkgrey;
     color: white;
-}
-
-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
 }
 
 table,
@@ -190,6 +278,10 @@ td {
     text-align: center;
 }
 
+.td {
+    font-size: 18px;
+}
+
 th {
     background-color: darkgrey;
     color: white;
@@ -202,6 +294,9 @@ th {
 /* Table row even number styling */
 
 .table-box {
+    display: flex;
+    min-width: 800px;
+    flex-direction: column;
     width: 80%;
     padding: 20px;
     margin: 20px auto;
@@ -211,6 +306,18 @@ th {
     color: black;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 1000px) {
+    .dashboard-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "table-box"
+            "price-table";
+    }
+}
+/* Make table responsive */
+
 /* Table box styling */
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Services Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -227,14 +334,136 @@ th {
     background-color: darkgrey;
     border: 2px solid black;
     border-radius: 5px;
-    max-width: 625px;
+    max-width: 800px;
 }
 
-.logo-box {
-    display: flex;
-    justify-content: bottom;
-    flex-wrap: wrap;
-    align-self: bottom;
-
-}
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX About Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Contact Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.contact-box {
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid lightgrey;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: black;
+}
+
+
+.formfill {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius:5px;
+}
+
+
+input {
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.item1 {
+    display: inline-block;
+    font: 10px;
+    padding: 5px;
+    margin: 2px;
+    width: 50%;
+    display: table-cell;
+    text-align: center;
+    border-radius: 5px;
+}
+/* Setting button to display side by side */
+
+button {
+    background-color: darkgrey;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgrey;
+    color:black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+.email-label::before {
+    content: "✉";
+    color: black;
+    font-style: bold;
+}
+
+.tel-label::before {
+    content: "☏";
+    color: black;
+    font-style: bold;
+}
+/* Adding icon */
+
+.terms-link {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: bold;
+}
+/* Add T&C */
+
+textarea {
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.summary-label {
+    text-align: top;
+}
+
+.summary-label::after {
+    content: "🗊";
+    color: black;
+    font-style: bold;
+}
+/* Summary input styling */
+
+.notes {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    color: black;
+    background-color: whitesmoke;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Contact Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Affiliation Page Styling XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.affbox {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid darkgrey;
+    text-align: center;
+    align-items: center;
+    color: black;
+    background-color: lightgrey;
+    border-radius: 8px;
+}
